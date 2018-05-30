@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Zina Bogdanova](https://up.htmlacademy.ru/htmlcss/21/user/791259).
-* Наставник: `Неизвестно`.
+* Наставник: [Мария Чернова] (https://htmlacademy.ru/profile/id49571)
 
 ---
 
