@@ -24,9 +24,9 @@
           <li class="site-navigation-item"><a href="about.html">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="#"><span></span></a></li>
+          <li><a href="#"><span>Поиск</span></a></li>
           <li><a href="#">Вход</a></li>
-          <li><a href="#">Пусто</a></li>
+          <li><a href="#"><span class="visually-hidden">Корзина:</span>Пусто</a></li>
         </ul>
       </nav>
       <p class="top-contact-info">
@@ -52,6 +52,11 @@
           </li>
         </ul>
         <a class="button" href="#">Давайте оба!</a>
+        <ul class="slideshow-navigation-list">
+          <li class=" slideshow-navigation-item"><button class="button slideshow-button">1</button></li>
+          <li class=" slideshow-navigation-item"><button class="button slideshow-button">2</button></li>
+          <li class=" slideshow-navigation-item"><button class="button slideshow-button">3</button></li>
+        </ul>
       </section>
 
       <section class="promotion">
@@ -134,20 +139,25 @@
       <article class="blog-entry">
         <h2 class="visually-hidden">Статьи о мороженном</h2>
           <span class="blog-entry-new">Новое в нашем блоге</span>
-          <h3 class="blog-entry-title">10 способов сервировке фруктовых щербета в к столу.</h3>
+          <h3 class="blog-entry-title"><a href="#">10 способов сервировке фруктовых щербета в к столу.</a></h3>
       </article>
 
 
       <section class="subscription">
         <h2 class="visually-hidden">Подписаться на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <span>Электронная почта</span>
-        <button class="button">Отправить</button>
+        <form>
+          <p>
+            <label for="subscription-email" class="visually-hidden">Электронная почта:</label>
+            <input type="email" id="subscription-email" name="email" value="Электронная почта">
+            <button class="button" type="submit">Отправить</button>
+          </p>
+        </form>
       </section>
 
       <section class="find-us">
         <h2 class="visully-hidden">Как с нами связаться</h2>
-        <img src="img/map.jpg" alt="Карта проезда" width="600" height="450">
+        <img src="img/map.jpg" alt="Oфис расположен по адресу Ул. Большая Конюшенная 19/8, Санкт-Петербург" width="600" height="450">
         <p class="contact">
           Адрес главного офиса<br>
           и оффлайн магазина:<br>
