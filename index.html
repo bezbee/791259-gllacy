@@ -24,8 +24,35 @@
           <li class="site-navigation-item"><a href="about.html">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="#"><span>Поиск</span></a></li>
-          <li><a href="#">Вход</a></li>
+          <li><a href="#"><span class="visually-hidden">Поиск</span></a>
+            <ul class="modal user-navigation-search-list">
+              <li>
+                <form method="post" action="https://echo.htmlacademy.ru">
+                  <label for="user-search" class="visually-hidden">Поиск</label>
+                  <input type="search" name="user-search" id="user-search" value="Что ищем?">
+                </form>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Вход</a>
+            <form method="post" action="https://echo.htmlacademy.ru">
+            <ul class=" modal user-navigation-login-list">
+                <li>
+                  <label for="user-login-email" class="visually-hidden">Электронная почта:</label>
+                  <input type="email" id="user-login-email" name="user-email" value="Электронная почта">
+                </li>
+                <li>
+                  <label for="user-login-password" class="visually-hidden">Пароль</label>
+                  <input type="password" id="user-login-password" name="user-password" value="Пароль">
+                </li>
+                <li>
+                  <a class="restore" href="#">Забыли пароль?</a>
+                  <a class="restore" href="#">Новая регистрация</a>
+                </li>
+                <li><button class="button" type="submit">Отправить</button></li>
+              </ul>
+            </form>
+          </li>
           <li><a href="#"><span class="visually-hidden">Корзина:</span>Пусто</a></li>
         </ul>
       </nav>
@@ -34,30 +61,47 @@
         <span class="top-contact-phone">8 812 450-25-25</span>
       </p>
     </header>
+
+    <!-- Слайд Шоу  -->
+
     <main class="container">
       <h1 class="visually-hidden">Магазин Глэйси - это магазин по продаже мороженого</h1>
       <section class="slideshow">
         <ul class="slideshow-list">
         	<li class="slideshow-item">
         		<h2>Крем-брюле и пломбир с малиновым джемом</h2>
-        	  <img src="img/slide1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="400" height="400 ">
+        	  <img src="img/slide1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="200" height="200">
           </li>
           <li class="slideshow-item">
             <h2>Шоколадный пломбир и лимонный сорбет</h2>
-            <img src="img/slide2.png" alt="Шоколадный пломбир и лимонный сорбет" width="400" height="400">
+            <img src="img/slide2.png" alt="Шоколадный пломбир и лимонный сорбет" width="200" height="200">
         	</li>
           <li class="slideshow-item">
             <h2>Пломбир с помадкой и клубничный щербет</h2>
-            <img src="img/slide3.png" alt="Пломбир с помадкой и клубничный щербет" width="400 " height="400s">
+            <img src="img/slide3.png" alt="Пломбир с помадкой и клубничный щербет" width="200" height="200">
           </li>
         </ul>
         <a class="button" href="#">Давайте оба!</a>
-        <ul class="slideshow-navigation-list">
-          <li class="slideshow-navigation-item"><button class="button slideshow-button">Слайд 1</button></li>
-          <li class="slideshow-navigation-item"><button class="button slideshow-button">Слайд 2</button></li>
-          <li class="slideshow-navigation-item"><button class="button slideshow-button">Слайд 3</button></li>
+
+        <!-- Кнопочки прокрутки -->
+
+        <ul class="slider-control">
+            <li class="slider-control-item">
+              <input class="visually-hidden" type="radio" id="slider-first" name="slider-control">
+              <label class="visually-hidden" for="slider-first">Первый слайд</label>
+           </li>
+           <li class="slider-control-item">
+              <input class="visually-hidden" type="radio" id="slider-second" name="slider-control">
+              <label class="visually-hidden" for="slider-second">Второй слайд</label>
+           </li>
+          <li class="slider-control-item">
+            <input class="visually-hidden" type="radio" id="slider-third" name="slider-control">
+            <label class="visually-hidden" for="slider-third">Третий слайд</label>
+         </li>
         </ul>
       </section>
+
+        <!-- Хочу! - Секция "Выгодные предложения"  -->
 
       <section class="promotion">
         <h2 class="visually-hidden">Выгодные предложения</h2>
@@ -74,6 +118,8 @@
           </li>
         </ul>
       </section>
+
+              <!-- Картинки с мороженным  -->
 
       <section class="best-sellers">
         <h2 class="visually-hidden">Популярные товары</h2>
@@ -125,6 +171,8 @@
         </ul>
       </section>
 
+              <!-- Преимущества  -->
+
       <section class="features">
         <h2 class="visually-hidden">Преимущества производства</h2>
         <p class="features-title">Магазин Глэйси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства наразвес</p>
@@ -135,6 +183,8 @@
           <li class="feature-item feature-item-term">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженному расстаить в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
+
+          <!-- Малинка и вафля  -->
 
       <article class="blog-entry">
         <h2 class="visually-hidden">Статьи о мороженном</h2>
@@ -155,6 +205,8 @@
         </form>
       </section>
 
+        <!-- Карта и адрес -->
+
       <section class="find-us">
         <h2 class="visully-hidden">Как с нами связаться</h2>
         <img src="img/map.jpg" alt="Oфис расположен по адресу Ул. Большая Конюшенная 19/8, Санкт-Петербург" width="600" height="450">
@@ -168,6 +220,9 @@
         <a href="#" class="button">Форма обратной связи</a>
       </section>
     </main>
+
+          <!-- Футер начинается здесь -->
+
     <footer class="main-footer">
       <ul class="footer-social">
         <li><a href="#" class="social-button">Twitter</a></li>
@@ -188,10 +243,29 @@
         <p>Cделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a> copyright 2017</p>
       </div>
     </footer>
+
+          <!-- Всплывающее окно: Мы вам ответим! -->
+
     <section class="modal modal-feedback">
         <h2>Мы обязательно вам ответим!</h2>
-        <!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
+        <form method="post" action="https://echo.htmlacademy.ru">
+          <p>
+            <label for="modal-feedback-name" class="visually-hidden">Ваше имя:</label>
+            <input type="text" id="modal-feedback-name" name="modal-feedback-name" value="Как Вас зовут?">
+          </p>
+          <p>
+            <label for="modal-feedback-email" class="visually-hidden">Электронная почта:</label>
+            <input type="email" id="modal-feedback-email" name="modal-feedback-email" value="Ваша почта для ответа?">
+          </p>
+          <p>
+            <label for="modal-feedback-textarea" class="visually-hidden">Ваши комментарии:</label>
+            <textarea rows="5" id="modal-feedback-textarea" name="modal-feedback-textarea"> Напишите что-нибудь..."</textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close">Закрыть</button>
     </section>
+
+
   </body>
 </html>
