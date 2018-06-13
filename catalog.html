@@ -27,7 +27,7 @@
               <li>
                 <form method="post" action="https://echo.htmlacademy.ru">
                   <label for="user-search" class="visually-hidden">Поиск</label>
-                  <input type="search" name="user-search" id="user-search" value="Что ищем?">
+                  <input type="search" name="user-search" id="user-search" placeholder="Что ищем?">
                 </form>
               </li>
             </ul>
@@ -37,11 +37,11 @@
             <ul class=" modal user-navigation-login-list">
                 <li>
                   <label for="user-login-email" class="visually-hidden">Электронная почта:</label>
-                  <input type="email" id="user-login-email" name="user-email" value="Электронная почта">
+                  <input type="email" id="user-login-email" name="user-email" placeholder="Электронная почта">
                 </li>
                 <li>
                   <label for="user-login-password" class="visually-hidden">Пароль</label>
-                  <input type="password" id="user-login-password" name="user-password" value="Пароль">
+                  <input type="password" id="user-login-password" name="user-password" placeholder="Пароль">
                 </li>
                 <li>
                   <a class="restore" href="#">Забыли пароль?</a>
@@ -51,8 +51,33 @@
               </ul>
             </form>
           </li>
-          <li><a href="#"><span class="visually-hidden">Корзина:</span>Пусто</a></li>
-          <!-- здесь корзина с двумя товарами -->
+          <li>
+            <a href="#"><span class="visually-hidden">Корзина:</span>2 товара</a>
+            <table class="modal">
+              <tr class="visully-hidden basket-window-close">
+                <th class="visually-hidden">Закрыть окно</th>
+                <th>Выбранный товар</th>
+                <th>Количество</th>
+                <th>Цена</th>
+              </tr>
+              <tr>
+                <td class="visually-hidden basket-window-close">Закрыть</td>
+                <td>Пломбир с апельсиновым джемом</td>
+                <td>1,5 кг х <span class="basket-price-per-kilo">200 руб.</span></td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td class="visually-hidden basket-window-close">Закрыть</td>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td>1,5 кг х <span class="basket-price-per-kilo">300 руб.</span></td>
+                <td>450 руб.</td>
+              </tr>
+              <tr class="table-footer">
+                <td></td>
+                <td colspan="4">Итого: 750 руб.</td>
+              </tr>
+            </table>
+          </li>
         </ul>
       </nav>
       <p class="top-contact-info">
@@ -81,9 +106,8 @@
             <label for="filter-sort-option">Сортировка:</label>
             <select class="visually-hidden filter-input filter-input-checkbox" id="filter-sort-option">
               <option value="popularity" selected>По популярности</option>
-              <option value="">Сначала недорогие</option>
-              <option value="price:low-to-high">Сначала недорогие</option>
-              <option value="price:high-to-low">Сначала дорогие</option>
+              <option value="price-low-to-high">Сначала недорогие</option>
+              <option value="price-high-to-low">Сначала дорогие</option>
               <option value="fat-content">По жирности</option>
             </select>
           </p>
@@ -211,6 +235,9 @@
           </li>
         </ul>
       </section>
+
+      <!-- Пагинация -->
+
       <ul class="pagination-list">
         <li class="pagination-item pagination-item-current"><a>1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
