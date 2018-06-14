@@ -1,0 +1,275 @@
+/* colors:
+gray #323232
+green (background) #849D8F
+pinkish #FFBC9E
+*/
+
+
+body {
+margin: 0;
+padding: 0;
+font-family: Roboto, Arial, sans-serif;
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+color: #ffffff;
+background-color: #849D8F;
+background-image: url(../img/bgr1.jpg);
+background-position: top center;
+background-repeat: repeat;
+}
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  color: #ffffff;
+  background-color: #E74A35;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 2px 2px 0 #AC1000;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 20px;
+}
+
+.user-navigation > li > a {
+font-weight: medium;
+background-color: #a0b3a8;
+border-radius: 50%;
+
+}
+
+.user-navigation > li > a:hover,
+.user-navigation > li > a:focus {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.top-contact-hours {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.top-contact-phone {
+  font-size: 22px;
+  line-height: 24px;
+
+}
+
+.top-contact-info {
+  text-align: right;
+}
+
+.slideshow h2 {
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.slideshow-list li:nth-child(2) {
+  background-color: #8996A6;
+  background-image: url(../img/bgr2.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.slideshow-list li:last-child {
+  background-color: #9D8B84;
+  background-image: url(../img/bgr3.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+.slider-button {
+  text-align: center;
+  font-size: 32px;
+  line-height: 44px;
+
+}
+
+.promo-list {
+  font-size: 18px;
+  line-height: 22px;
+
+}
+
+.promo-item h3 {
+font-size: 35px;
+line-height: 41px;
+}
+
+.promo-list li:first-child {
+  background-color: #7a1020;
+  background-image: url("../img/rasberry.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+}
+
+.promo-list li:last-child {
+  background-color: #2b140a;
+  background-image: url("../img/chocolate.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+}
+
+.best-sellers-item:hover,
+.best-sellers-item:focus {
+
+  background-color: #a0b3ab;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+  color: #ffffff;
+}
+
+.best-sellers-item h3 {
+  font-size: 16px;
+  font-weight: medium;
+  line-height: 22px;
+  text-decoration: underline;
+}
+
+.item-price {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.item-price-weight {
+  font-size: 30px;
+  line-height: 13px;
+}
+
+.item-image img {
+
+background-size: 80px, cover;
+border-radius: 50%;
+background-clip:content-box;
+}
+
+.features {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: regular;
+  color: #323232;
+
+  background-color: #e9dec1;
+  background-image: url("../img/waffle.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.features p {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.blog-entry {
+  color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: medium;
+
+  background-color: #ffffff;
+  background-image: url("../img/strawberry.png");
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.blog-entry-title-link {
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: underline;
+  color:#323232;
+}
+
+.blog-entry-title-link:hover,
+.blog-entry-title-link:focus {
+  color: #FFBC9E;
+}
+.subscription {
+  color: #5A5A5A;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: medium;
+
+  background-color: #F8F7F4;
+  background-image: url("../img/candycane.jpg");
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  color: #323232;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: regular;
+
+  background-color: #ffffff;
+}
+.contact-address,
+.contact-phone,
+.contact a {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.about-business {
+  text-align: center;
+}
+
+.about-business a,
+.copyright p a {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: regular;
+  text-decoration: underline;
+
+}
+.about-business a:hover,
+.about-business a:focus,
+.copyright p a:hover,
+.copyright p a:focus {
+  color: #FFBC9E;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: regular;
+  text-align: right;
+}

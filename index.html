@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Глейси</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="cs/normalize.css" rel="stylesheet">
+    <link href="cs/style.css" rel="stylesheet">
+  </head>
 
-<body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <img src="img/logo.svg" alt="Глейси Лого" width="250" height="100">
-        <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="catalog.html">Каталог</a>
-            <ul class="catalog-list">
-              <li class="catalog-item catalog-item-new"><a href="#">Новинки</a></li>
-              <li class="catalog-item"><a href="#">Сливочное</a></li>
-              <li class="catalog-item"><a href="#">Щербеты</a></li>
-              <li class="catalog-item"><a href="#">Фруктовый лед</a></li>
-              <li class="catalog-item"><a href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li class="site-navigation-item"><a href="delivery-payment.html">Доставка и оплата</a></li>
-          <li class="site-navigation-item"><a href="about.html">О компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a href="#"><span class="visually-hidden">Поиск</span></a>
-            <ul class="modal user-navigation-search-list">
-              <li>
-                <form method="post" action="https://echo.htmlacademy.ru">
-                  <label for="user-search" class="visually-hidden">Поиск</label>
-                  <input type="search" name="user-search" id="user-search" placeholder="Что ищем?">
-                </form>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">Вход</a>
-            <form method="post" action="https://echo.htmlacademy.ru">
-            <ul class=" modal user-navigation-login-list">
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <img src="img/logo.svg" alt="Глейси Лого" width="250" height="100">
+          <ul class="site-navigation">
+            <li class="site-navigation-item"><a href="catalog.html">Каталог</a>
+              <ul class="catalog-list">
+                <li class="catalog-item catalog-item-new"><a href="#">Новинки</a></li>
+                <li class="catalog-item"><a href="#">Сливочное</a></li>
+                <li class="catalog-item"><a href="#">Щербеты</a></li>
+                <li class="catalog-item"><a href="#">Фруктовый лед</a></li>
+                <li class="catalog-item"><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="site-navigation-item"><a href="delivery-payment.html">Доставка и оплата</a></li>
+            <li class="site-navigation-item"><a href="about.html">О компании</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li><a href="#"><span class="visually-hidden">Поиск</span></a>
+              <ul class="modal user-navigation-search-list">
+                <li>
+                  <form method="post" action="https://echo.htmlacademy.ru">
+                    <label for="user-search" class="visually-hidden">Поиск</label>
+                    <input type="search" name="user-search" id="user-search" placeholder="Что ищем?">
+                  </form>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Вход</a>
+              <form method="post" action="https://echo.htmlacademy.ru">
+              <ul class=" modal user-navigation-login-list">
                 <li>
                   <label for="user-login-email" class="visually-hidden">Электронная почта:</label>
                   <input type="email" id="user-login-email" name="user-email" placeholder="Электронная почта">
@@ -74,26 +77,26 @@
           </li>
           <li class="slideshow-item">
             <h2>Шоколадный пломбир и лимонный сорбет</h2>
-            <img src="img/slide2.png" alt="Шоколадный пломбир и лимонный сорбет" width="900" height="881">
+            <img src="img/slide2.png" alt="Шоколадный пломбир и лимонный сорбет" width="900" height="859">
         	</li>
           <li class="slideshow-item">
             <h2>Пломбир с помадкой и клубничный щербет</h2>
-            <img src="img/slide3.png" alt="Пломбир с помадкой и клубничный щербет" width="900" height="881">
+            <img src="img/slide3.png" alt="Пломбир с помадкой и клубничный щербет" width="700" height="663">
           </li>
         </ul>
-        <a class="button" href="#">Давайте оба!</a>
+        <a class="button slider-button" href="#">Давайте оба!</a>
 
         <!-- Кнопочки прокрутки -->
 
         <ul class="slider-switches">
             <li class="slider-radio">
-              <button class="slide-button">Первый слайд</button>
+              <button class="slide-button"><span class="visually-hidden>"Первый слайд</span></button>
            </li>
            <li class="slider-radio">
-             <button class="slide-button">Второй слайд</button>
+             <button class="slide-button"><span class="visually-hidden>"Второй слайд</span></button>
           </li>
           <li class="slider-radio">
-            <button class="slide-button">Третий слайд</button>
+            <button class="slide-button"><span class="visually-hidden>"Третий слайд</span></button>
          </li>
         </ul>
       </section>
@@ -110,7 +113,7 @@
           </li>
           <li class="promo-item">
             <h3 class="promo-item-header">Шоколадки даром!</h3>
-            <p class="promo-item-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+            <p class="promo-item-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a class="button" href="#">Хочу шоколадки!</a>
           </li>
         </ul>
@@ -181,7 +184,7 @@
         </ul>
       </section>
 
-          <!-- Малинка и вафля  -->
+          <!-- Малинка   -->
 
       <article class="blog-entry">
         <h2 class="visually-hidden">Статьи о мороженном</h2>
@@ -205,7 +208,7 @@
         <!-- Карта и адрес -->
 
       <section class="find-us">
-        <h2 class="visully-hidden">Как с нами связаться</h2>
+        <h2 class="visually-hidden">Как с нами связаться</h2>
         <img src="img/map.jpg" alt="Oфис расположен по адресу Ул. Большая Конюшенная 19/8, Санкт-Петербург" width="600" height="450">
         <p class="contact">
           Адрес главного офиса<br>
@@ -213,8 +216,9 @@
           <span class="contact-address">Ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</span><br>
           Для заказов по телефону:<br>
           <span class="contact-phone">8 812 450-25-25</span><br>
-          (с 10 до 20 ежедневно)</p>
-        <a href="#" class="button">Форма обратной связи</a>
+          (с 10 до 20 ежедневно)<br>
+          <a href="#" class="button">Форма обратной связи</a>
+        </p>
       </section>
     </main>
 
