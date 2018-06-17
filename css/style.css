@@ -48,8 +48,26 @@ a {
   box-shadow: 0 2px 2px 0 #AC1000;
 }
 
-ul {
+.site-navigation-list,
+.top-catalog-list,
+.user-navigation,
+.user-navigation-search-list,
+.user-navigation-login-list,
+.slideshow-list,
+.slider-switches,
+.promo-list,
+.best-sellers-list,
+.featutes-list,
+.footer-social,
+.about-business,
+.pagination-list,
+.breadcrumbs,
+.filter-fat-list,
+.filter-topping,
+.catalog-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-navigation {
@@ -57,6 +75,16 @@ ul {
   line-height: 18px;
 }
 
+.top-catalog-list,
+.user-navigation-search-list,
+.user-navigation-login-list,
+.basket {
+  display: none;
+}
+
+.site-navigation a {
+  text-decoration: underline;
+}
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #323232;
@@ -64,14 +92,14 @@ ul {
   border-radius: 20px;
 }
 
-.user-navigation > li > a {
-  font-weight: medium;
+.user-navigation-item > a {
+  font-weight: 500;
   background-color: #a0b3a8;
   border-radius: 50%;
 }
 
-.user-navigation > li > a:hover,
-.user-navigation > li > a:focus {
+.user-navigation-item a:hover,
+.user-navigation-item a:focus {
   color: #323232;
   background-color: #f8f7f4;
 }
@@ -149,7 +177,7 @@ ul {
 
 .best-sellers-item h3 {
   font-size: 16px;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 22px;
   text-decoration: underline;
 }
@@ -191,7 +219,7 @@ ul {
   color: #323232;
   font-size: 16px;
   line-height: 22px;
-  font-weight: medium;
+  font-weight: 500;
   background-color: #ffffff;
   background-image: url("../img/strawberry.png");
   background-position: 0 0;
@@ -206,7 +234,8 @@ ul {
   color: #323232;
 }
 
-.blog-entry-title-link:hover, .blog-entry-title-link:focus {
+.blog-entry-title-link:hover,
+.blog-entry-title-link:focus {
   color: #FFBC9E;
 }
 
@@ -214,7 +243,7 @@ ul {
   color: #5A5A5A;
   font-size: 16px;
   line-height: 22px;
-  font-weight: medium;
+  font-weight: 500;
   background-color: #F8F7F4;
   background-image: url("../img/candycane.jpg");
   background-position: 0 0;
@@ -346,7 +375,7 @@ color: #999999;
 .filter-option {
   font-size: 14px;
   line-height: 16px;
-  font-weight: medium;
+  font-weight: 500;
 
 }
 
@@ -364,14 +393,14 @@ color: #999999;
 .filter-fat-list li,
 .filter-topping li {
   font-size: 16px;
-  font-weight: 18px;
-  line-height: medium;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .pagination-item a {
   font-size: 16px;
   line-height: 18px;
-  font-weight: medium;
+  font-weight: 500;
   padding: 10px;
 }
 
@@ -387,4 +416,190 @@ border-radius: 50%;
   color: #353535;
   background-color: #fbfbfb;
   border-radius: 50%;
+}
+
+/*Сетка*/
+
+.main-header {
+
+  min-height: 115px;
+}
+
+.container {
+  width: 1145px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.main-header .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 115px;
+}
+
+.top-contact-info {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.main-navigation{
+  display: flex;
+}
+.site-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation img {
+  margin-right: 20px;
+}
+
+.site-navigation-list {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  justify-content: space-between;
+}
+.user-navigation {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.user-navigation li {
+  margin-left: 10px;
+}
+.slideshow {
+  min-height: 490px;
+  margin-bottom: 40px;
+}
+
+.promotion {
+  min-height: 230px;
+  margin-bottom: 40px;
+
+}
+
+.promo-list {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.promo-item {
+  padding: 30px 20px;
+  width: 505px;
+  min-height: 180px;
+
+}
+
+.best-sellers {
+  margin-bottom: 40px;
+  min-height: 320px;
+}
+.best-sellers-list {
+  display: flex;
+  justify-content: space-between;
+}
+.best-sellers-item {
+  width: 270px;
+  text-align: center;
+}
+
+.features {
+  min-height: 310px;
+  margin-bottom: 40px;
+    padding: 30px 20px;
+}
+
+.together{
+  margin-bottom: 40px;
+  min-height: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-entry,
+.subscription {
+  padding: 30px 20px;
+  width: 505px;
+  min-height: 180px;
+}
+
+.find-us {
+  min-height: 425;
+  display: flex;
+}
+
+.contact {
+  min-height: 308;
+  width: 305;
+  padding: 30px 20px;
+  margin-left: auto;
+  margin-bottom:auto;
+  margin-top: auto;
+}
+
+.main-footer {
+  padding: 20px 0;
+  min-height: 105px;
+}
+
+.main-footer .container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social {
+  width: 190px;
+  min-height: 40px;
+  margin-right: 210px;
+}
+
+.about-business {
+  width: 330px;
+  min-height: 35px;
+}
+.copyright {
+  width: 190px;
+  min-height:60px;
+  margin-left: auto;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: flex-end;
+  width: 225px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filter {
+  min-height: 130px;
+  width: 860px;
+  margin-bottom: 40px;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter-form .button {
+  margin-left: auto;
+  background-color: #a6b9ae;
+  border: 1px solid #ffffff;
+}
+.catalog-list {
+  min-height: 1045px;
+  display:flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  justify-content: space-between;
+}
+
+.pagination-list {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+
 }
