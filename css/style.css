@@ -201,7 +201,7 @@ a {
 .features {
   font-size: 16px;
   line-height: 22px;
-  font-weight: regular;
+  font-weight: 300;
   color: #323232;
   background-color: #e9dec1;
   background-image: url("../img/waffle.jpg");
@@ -254,7 +254,7 @@ a {
   color: #323232;
   font-size: 14px;
   line-height: 20px;
-  font-weight: regular;
+  font-weight: 300;
   background-color: #ffffff;
 }
 
@@ -274,7 +274,7 @@ a {
 .copyright p a {
   font-size: 13px;
   line-height: 16px;
-  font-weight: regular;
+  font-weight: 300;
   text-decoration: underline;
 }
 
@@ -288,7 +288,7 @@ a {
 .copyright {
   font-size: 12px;
   line-height: 16px;
-  font-weight: regular;
+  font-weight: 300;
   text-align: right;
 }
 
@@ -336,7 +336,7 @@ tr:not(:last-of-type) {
 font-size: 13px;
 line-height: 16px;
 color: #323232;
-font-weight: regular;
+font-weight: 300;
 }
 
 .table-footer td {
@@ -352,14 +352,14 @@ color: #999999;
 .breadcrumbs a {
   font-size: 14px;
   line-height: 16px;
-  font-weight: regular;
+  font-weight: 300;
   text-decoration: underline;
 }
 
 .breadcrumbs .breadcrumbs-current {
   font-size: 14px;
   line-height: 16px;
-  font-weight: regular;
+  font-weight: 300;
 }
 .breadcrumbs a:focus,
 .breadcrumbs a:hover {
@@ -522,13 +522,13 @@ border-radius: 50%;
 }
 
 .find-us {
-  min-height: 425;
+  min-height: 425px;
   display: flex;
 }
 
 .contact {
-  min-height: 308;
-  width: 305;
+  min-height: 308px;
+  width: 305px;
   padding: 30px 20px;
   margin-left: auto;
   margin-bottom:auto;
