@@ -102,11 +102,13 @@ a {
 .site-navigation a:focus {
   color: #323232;
   background-color: #f8f7f4;
+  border-radius: 40px;
 }
 
 .user-navigation-item > a {
   font-weight: 500;
   background-color: #a0b3a8;
+  border-radius: 60px;
 
 }
 
