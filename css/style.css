@@ -203,8 +203,8 @@ margin-right: 20px;
   background-size: cover;
 }
 
-.best-sellers-item:hover,
-.best-sellers-item:focus {
+.best-sellers-list li:hover,
+.best-sellers-list li:focus {
   background-color: #a0b3ab;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   color: #ffffff;
@@ -255,20 +255,21 @@ margin-right: 20px;
 
 .features-list {
   display: flex;
-  flex-direction: column;
   align-content: space-between;
   flex-wrap: wrap;
-  height: 200px;
   justify-content: space-between;
+  margin-right: 20px;
 
 }
 
 .feature-item {
   position: relative;
-  padding-left: 55;
   width: 480px;
-  min-height: 100px;
+  padding-left: 55px;
+  margin-bottom: 30px;
+
 }
+
 
 .feature-item-bar::before {
   content: "";
@@ -279,6 +280,7 @@ margin-right: 20px;
   background-position: 0 0;
   position: absolute;
   left: -2px;
+  top: -15px;
 }
 
 .feature-item-leaf::before {
@@ -290,6 +292,7 @@ margin-right: 20px;
   background-position: 0 0;
   position: absolute;
   left: -2px;
+  top: -15px;
 }
 
 .feature-item-cow::before {
@@ -301,6 +304,7 @@ margin-right: 20px;
   background-position: 0 0;
   position: absolute;
   left: -2px;
+  top: -15px;
 }
 
 .feature-item-term::before {
@@ -312,6 +316,7 @@ margin-right: 20px;
   background-position: 0 0;
   position: absolute;
   left: -2px;
+  top: -15px;
 }
 
 .blog-entry {
@@ -398,7 +403,7 @@ margin-right: 20px;
 .contact a {
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .about-business {
@@ -406,7 +411,7 @@ margin-right: 20px;
 }
 
 .about-business a,
-.copyright p a {
+.copyright-text a {
   font-size: 13px;
   line-height: 16px;
   font-weight: 300;
@@ -415,8 +420,8 @@ margin-right: 20px;
 
 .about-business a:hover,
 .about-business a:focus,
-.copyright p a:hover,
-.copyright p a:focus {
+.copyright-text a:hover,
+.copyright-text a:focus {
   color: #FFBC9E;
 }
 
@@ -424,7 +429,10 @@ margin-right: 20px;
   font-size: 12px;
   line-height: 16px;
   font-weight: 300;
-  text-align: right;
+}
+
+.copyright-text {
+  white-space: nowrap;
 }
 
 .modal {
@@ -689,9 +697,39 @@ border-radius: 50%;
   justify-content: space-between;
 }
 
-.best-sellers-item {
-  width: 270px;
+.best-sellers-list li {
+  width: 275px;
   text-align: center;
+  position: relative;
+}
+
+.best-sellers-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.best-sellers-item h3 {
+  margin-top: 0;
+  order: 2;
+}
+
+.best-sellers-item h3::before {
+  content: "";
+  width: 61px;
+  height: 61px;
+  background-image:url("../img/hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.item-price-info {
+  position: absolute;
+  top: 200px;
 }
 
 .features {
@@ -720,8 +758,8 @@ border-radius: 50%;
   display: flex;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 0 0;
+  background-size: 100%;
 }
 
 .find-us img {
@@ -731,10 +769,32 @@ border-radius: 50%;
 .contact {
   min-height: 308px;
   width: 305px;
-  padding: 30px 20px;
-  margin-left: auto;
+  padding: 30px 27px;
+margin-left: auto;
+margin-right: 25px;
   margin-bottom:auto;
   margin-top: auto;
+  border-radius: 25px;
+}
+
+.contact-address,
+.contact-phone {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  margin-bottom: 30px;
+}
+
+.contact-item:last-child {
+  flex-grow: 1;
 }
 
 .main-footer {
@@ -753,6 +813,12 @@ border-radius: 50%;
   margin-right: 210px;
   display: flex;
   flex-wrap: wrap;
+}
+
+
+.social-button:hover path,
+.social-button:focus path {
+  fill: #000000;
 }
 
 .footer-social li {
