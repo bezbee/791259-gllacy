@@ -92,15 +92,13 @@ a {
 .user-navigation-login-list,
 .slideshow-list,
 .slider-switches,
-.best-sellers-list,
 .features-list,
 .footer-social,
 .about-business,
 .pagination-list,
 .breadcrumbs,
 .filter-fat-list,
-.filter-topping,
-.catalog-list {
+.filter-topping{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -344,7 +342,7 @@ text-decoration: underline;
     background-image: url("../img/entrance-dark.svg");
 }
 
-.user-navigation-item:nth-child(3) a::before {
+.user-navigation-item:nth-child(3) > a::before {
   content: "";
   width: 21px;
   height: 20px;
@@ -359,13 +357,34 @@ text-decoration: underline;
     background-image: url("../img/basket-dark.svg");
 }
 
-
-
-.basket {
-  display: none;
+.inner-page .user-navigation-item:nth-child(3) > a {
+  background-color: #F8F7F4;
+  color: #323232;
+  position: relative;
 }
 
+.inner-page .user-navigation-item:nth-child(3) > a::before {
+  content: "";
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  left: 5px;
+  background-image: url("../img/basket-red.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
 
+.basket {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+  position: absolute;
+  width: 540px;
+  min-height: 242px;
+  padding: 20px 16px;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
+  border-radius: 10px;
+}
 
 .top-contact-hours {
   font-size: 14px;
@@ -489,32 +508,89 @@ margin-right: 20px;
   margin-bottom: 50px;
 }
 
-.best-sellers-list li:hover,
-.best-sellers-list li:focus {
+.best-sellers {
+  margin-bottom: 40px;
+  min-height: 320px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.best-sellers-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.best-sellers-list .best-sellers-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 230px;
+  min-height: 365px;
+  text-align: center;
+  position: relative;
+  padding: 0px 10px;
+}
+
+.best-sellers-item p:first-of-type::before {
+  content: "";
+  width: 61px;
+  height: 61px;
+  background-image:url("../img/hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.best-sellers-list .button {
+  display: none;
+  margin-bottom: 15px;
+  padding: 10px 0px;
+
+}
+
+.best-sellers-list .best-sellers-item:hover .button {
+  display: block;
+}
+
+.best-sellers-item .item-price-info {
+  position: absolute;
+  top: 160px;
+}
+
+.best-sellers-list .best-sellers-item:hover,
+.best-sellers-list .best-sellers-item:focus {
   background-color: #a0b3ab;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   color: #ffffff;
 }
 
-.best-sellers-item h3 {
+
+.best-sellers-item p:nth-of-type(3) {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
   text-decoration: underline;
+  margin-top: 0;
 }
 
-.item-price {
+.best-sellers-item .item-price {
   font-size: 45px;
   line-height: 45px;
 }
 
-.item-price-weight {
+.best-sellers-item .item-price-weight {
   font-size: 30px;
-  line-height: 13px;
+  line-height: 45px;
 }
 
-.item-image img,
-.catalog-item img {
+.best-sellers-item .item-image{
   background-size: 180px;
   border-radius: 50%;
 }
@@ -797,7 +873,7 @@ display: none;
 
 .site-navigation-link-active {
 background-color: #D07058;
-border-radius: 20%;
+border-radius: 25px;
 }
 tr:not(:last-of-type) {
 font-size: 13px;
@@ -907,62 +983,6 @@ border-radius: 50%;
   min-height: 230px;
   margin-bottom: 40px;
 
-}
-
-
-
-.best-sellers {
-  margin-bottom: 40px;
-  min-height: 320px;
-}
-
-.best-sellers-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.best-sellers-list li {
-  width: 275px;
-  text-align: center;
-  position: relative;
-}
-
-.best-sellers-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 10px;
-}
-
-.best-sellers-item h3 {
-  margin-top: 0;
-  order: 2;
-}
-
-.best-sellers-item h3::before {
-  content: "";
-  width: 61px;
-  height: 61px;
-  background-image:url("../img/hit.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  position: absolute;
-  top: 15px;
-  left: 10px;
-}
-
-.best-sellers-list  .button {
-  display: none;
-  margin: 15px 9px;
-}
-
-.best-sellers-list li:hover .button {
-  display: block;
-}
-
-.item-price-info {
-  position: absolute;
-  top: 200px;
 }
 
 .features {
@@ -1137,13 +1157,6 @@ margin-right: 25px;
   border: 1px solid #ffffff;
 }
 
-.catalog-list {
-  min-height: 1045px;
-  display:flex;
-  flex-wrap: wrap;
-  margin-bottom: 80px;
-  justify-content: space-between;
-}
 
 .pagination-list {
   min-height: 30px;
