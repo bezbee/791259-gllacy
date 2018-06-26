@@ -252,8 +252,8 @@ display:block;
 }
 
 .user-navigation-item:first-child a {
-  width: 12px;
-  min-height: 20px;
+  display: block;
+  height: 22px;
   border-radius: 50%;
 }
 
@@ -360,7 +360,6 @@ text-decoration: underline;
 .inner-page .user-navigation-item:nth-child(3) > a {
   background-color: #F8F7F4;
   color: #323232;
-  position: relative;
 }
 
 .inner-page .user-navigation-item:nth-child(3) > a::before {
@@ -379,11 +378,72 @@ text-decoration: underline;
   line-height: 16px;
   font-weight: 300;
   position: absolute;
+  top: 59px;
+  left: 755px;
   width: 540px;
   min-height: 242px;
   padding: 20px 16px;
   box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
   border-radius: 10px;
+  display: none;
+
+}
+
+.basket .chosen-title {
+  padding-left: 72px;
+}
+
+tr:nth-child(2) .chosen-title::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 16px;
+  background-image: url("../img/cross-small.svg");
+}
+
+tr:nth-child(3) .chosen-title::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 16px;
+  background-image: url("../img/cross-small.svg");
+}
+
+tr:nth-child(2) .chosen-title::after {
+  content: "";
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 30px;
+  left: 41px;
+  background-image: url("../img/item1-small.png");
+  background-position: 0 0;
+}
+
+tr:nth-child(3) .chosen-title::after {
+  content: "";
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  left: 41px;
+  top: 80px;
+  background-image: url("../img/item3-small.png");
+  background-position: 0 0;
+}
+
+.table-footer td{
+  padding-left: 390px;
+  padding-top: 10px;
+}
+
+.table-button td {
+  padding-left: 270px;
+}
+
+.inner-page .user-navigation-item:nth-child(3):hover .basket {
+  display: table;
 }
 
 .top-contact-hours {
@@ -567,8 +627,7 @@ margin-right: 20px;
 .best-sellers-list .best-sellers-item:hover,
 .best-sellers-list .best-sellers-item:focus {
   background-color: #a0b3ab;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  color: #ffffff;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -939,11 +998,16 @@ color: #999999;
   font-weight: 500;
 }
 
+
 .pagination-item a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  padding: 10px;
+  padding-left: 10px;
+  display: block;
+  padding: 8px 13px;
+  margin-right: 2px;
+
 }
 
 .pagination-item a:hover,
