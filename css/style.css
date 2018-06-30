@@ -1457,10 +1457,13 @@ border-radius: 50%;
   text-align: right;
 }
 
+.inner-page .main-header {
+  position:relative;
+}
 .inner-page .top-contact-info {
   position: absolute;
 
-  right: 48px;
+  right: 35px;
   top: 66px;
 }
 
