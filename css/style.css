@@ -148,6 +148,7 @@ a {
 
 .site-navigation-item > a {
   padding: 6px 15px;
+  text-decoration: underline;
 }
 
 .site-navigation-item > a:hover,
@@ -155,6 +156,7 @@ a {
   color: #323232;
   background-color: #f8f7f4;
   border-radius: 40px;
+  text-decoration: none;
 }
 
 .site-navigation-item > a:active {
