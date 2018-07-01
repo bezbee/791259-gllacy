@@ -966,7 +966,7 @@ color: #999999;
 
 .subscription input:hover,
 .subsription input:focus {
-  border: 2px solid rgba(154,154,154,0.52);
+  border: 1px solid rgba(154,154,154,0.7);
 }
 
 .subscription button {
@@ -1144,22 +1144,90 @@ color: #999999;
   white-space: nowrap;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   background-color: #F8F7F4;
   border: 1px solid #979797;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 1;
+  display: none;
 }
 
 .modal-feedback {
   position: fixed;
-  top: 338px;
-  left: 365px;
-  width: 477px;
+  width: 427px;
+  height: 420px;
+  top: 50%;
+  top: 210px;
+  left:505px;
+
+
   padding: 17px 22px;
-border: 1px solid #979797;
-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50), inset 0 1px 3px 0 rgba(0,0,0,0.50);
+  border: 1px solid #979797;
+  box-shadow:
+  0 2px 4px 0 rgba(0,0,0,0.50),
+  inset 0 1px 3px 0 rgba(0,0,0,0.50);
 
 display: none;
+z-index: 2;
+}
+
+.modal-show {
+  display: block;
+  /*animation: bounce 0.6s;*/
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-close {
@@ -1192,13 +1260,18 @@ display: none;
   width: 265px;
 }
 
-.modal-feedback p:nth-child(3) textarea {
-  width: 431px;
+.modal-feedback p:nth-child(3) {
+  width: 100%;
+}
+
+.modal textarea {
+  width: 90%;
 }
 
 .modal-feedback form .button {
   width: 141px;
   align-self: flex-end;
+  padding: 10px 15px;
 }
 
 .modal input,
@@ -1206,7 +1279,15 @@ display: none;
   border-radius: 5px;
   box-shadow: none;
   padding: 10px 15px;
+  border: 1px solid rgb(211,211,211);
 }
+
+.modal input:focus,
+.modal input:hover,
+.modal textarea:focus,
+.modal textarea:hover {
+    border: 1px solid rgba(154,154,154,0.7);
+  }
 
 ::-webkit-input-placeholder {
   color: #999999;
