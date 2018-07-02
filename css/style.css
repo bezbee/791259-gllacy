@@ -993,6 +993,12 @@ color: #999999;
   background-size:80px 140px, 100% 98%;
 }
 
+.google-map {
+  width: 1200px;
+  height:425px;
+  border: 0;
+}
+
 .contact {
   color: #323232;
   font-size: 14px;

@@ -3,7 +3,7 @@ var link = document.querySelector(".contact-item-button");
 var popup = document.querySelector(".modal-feedback");
 var close = popup.querySelector(".modal-close");
 var form = popup.querySelector("form");
-var name = popup.querySelector("[id=modal-feedback-name]");
+var fullname = popup.querySelector("[id=modal-feedback-name]");
 var email = popup.querySelector("[id=modal-feedback-email]");
 var overlay = document.querySelector(".modal-overlay");
 
@@ -11,7 +11,7 @@ link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
   overlay.classList.add("modal-show-popup");
-  name.focus();
+  fullname.focus();
 });
 
 close.addEventListener("click", function (evt) {
