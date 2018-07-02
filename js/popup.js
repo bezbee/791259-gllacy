@@ -28,7 +28,7 @@ overlay.addEventListener("click", function (evt){
 
 });
 
-form.addEventListner("submit", function (evt) {
+form.addEventListener("submit", function (evt) {
   if (!name.value || !email.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
@@ -37,7 +37,7 @@ form.addEventListner("submit", function (evt) {
   }
 });
 
-window.addEventListner("keydown", function (evt) {
+window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (popup.classList.contains("modal-show")) {
       evt.preventDefault();
