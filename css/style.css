@@ -1368,8 +1368,6 @@ tr:nth-child(3) .chosen-title::after {
   padding: 7px 20px 7px 15px;
   margin-top: 9px;
 
-  background: rgba(255, 45, 82, 0.2);
-box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
 .filter-sort select:hover,
