@@ -35,14 +35,6 @@ body {
   visibility: hidden;
 }
 
-.site-wrapper::before {
-  background-image: url("img/slider-2.png");
-}
-
-.site-wrapper::after {
-  background-image: url("img/slider-3.png");
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -174,9 +166,6 @@ tr:not(:last-of-type) {
   background: #F8F7F4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.40);
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   display: none;
   z-index: 10;
   overflow: hidden;
@@ -389,6 +378,7 @@ tr:not(:last-of-type) {
 }
 
 .top-contact-info {
+  width: 175px;
   margin-left: auto;
   margin-top: auto;
   min-height: 40px;
@@ -396,6 +386,7 @@ tr:not(:last-of-type) {
 }
 
 .top-contact-hours {
+  display: block;
   font-size: 14px;
   line-height: 16px;
 }
@@ -799,7 +790,8 @@ tr:not(:last-of-type) {
   width: 505px;
   min-height: 120px;
   background-color: #F8F7F4;
-  background-image: url("../img/plain.jpg"), background-position: 0 0;
+  background-image: url("../img/plain.jpg");
+  background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
   border: 8px solid rgba(0, 0, 0, 0.4);
@@ -939,7 +931,7 @@ tr:not(:last-of-type) {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: : center;
+  align-items: center;
 }
 
 .about-business li {
@@ -1322,6 +1314,9 @@ tr:nth-child(3) .chosen-title::after {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  background: rgba(255, 45, 82, 0.2);
+ box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
 .filter ul,
@@ -1388,10 +1383,6 @@ tr:nth-child(3) .chosen-title::after {
   font-weight: 500;
 }
 
-.filter-sort .filter-option:nth-of-type(2) {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
 
 .filter-price .filter-option {
   display: inline-block;
@@ -1402,7 +1393,7 @@ tr:nth-child(3) .chosen-title::after {
 
 .filter-price input[type=range] {
   -webkit-appearance: none;
-  width: 100%;
+  width: 221px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   padding: 4px 10px;
