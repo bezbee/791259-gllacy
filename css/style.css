@@ -860,7 +860,7 @@ tr:not(:last-of-type) {
   border-radius: 10px;
 }
 
-.contact p,
+.contact .contact-item,
 .contact a {
   display: block;
   margin: 27px 25px;
@@ -868,6 +868,9 @@ tr:not(:last-of-type) {
 
 .contact a {
   padding: 10px 25px;
+}
+.contact .contact-item:first-child {
+  margin-top: 35px;
 }
 
 .contact-address,
@@ -1315,8 +1318,6 @@ tr:nth-child(3) .chosen-title::after {
   justify-content: space-between;
   align-items: center;
 
-  background: rgba(255, 45, 82, 0.2);
- box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
 .filter ul,
@@ -1387,13 +1388,13 @@ tr:nth-child(3) .chosen-title::after {
 .filter-price .filter-option {
   display: inline-block;
   vertical-align: center;
-  padding: 10px;
-  margin-right: 5px;
+  padding: 10px 20px;
+
 }
 
 .filter-price input[type=range] {
   -webkit-appearance: none;
-  width: 221px;
+  width: 201px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   padding: 4px 10px;
