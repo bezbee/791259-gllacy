@@ -116,10 +116,16 @@
                 <option value="fat-content">По жирности</option>
               </select></label>
           </p>
-          <p class="filter-price">
-            <label for="price-rage">Цена: 100 руб. - 500 руб.</label>
-            <input id="price-rage" type="range" name="price-range" step="50" min="1" max="500" value="50">
-          </p>
+          <div class="filter-price">
+            <div class="filter-price-range">Цена: 100 руб. - 500 руб.</div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+          </div>
           <fieldset class="filter-fat">
             <legend class="filter-option">Жирность:</legend>
             <ul class="filter-fat-list">
