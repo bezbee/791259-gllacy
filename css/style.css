@@ -243,10 +243,8 @@ a {
 
 .user-navigation-search-list input {
   display: block;
-  margin-left: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  width: 310px;
+  margin: 15px;
+  width: 305px;
   border: 1px solid rgb(211, 211, 211);
 }
 
@@ -383,6 +381,8 @@ a {
 .top-contact-phone {
   font-size: 22px;
   line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .slider {
@@ -891,6 +891,8 @@ a {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  color: #323232;
+  text-decoration: none;
 }
 
 .main-footer {
@@ -1416,12 +1418,41 @@ padding-bottom: 10px;
 
 }
 
-.filter-price input[type=range]:first-of-type {
+.filter-price input[type=range] {
   -webkit-appearance: none;
+  -moz-appearance: none;
   width: 201px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   padding: 4px 10px;
+}
+
+
+.filter-price input[type=range]::-webkit-slider-runnable-track {
+  height: 3px;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 1.3px;
+  margin: 10px;
+  position: relative;
+}
+
+.filter-price input[type=range]::-moz-range-track {
+  height: 3px;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 1.3px;
+}
+
+input[type=range]::-ms-track {
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 1.3px;
+  margin: 8px;
+}
+
+input[type=range]::-ms-fill {
+  background-color: transparent;
 }
 
 .filter-price input[type=range]::-webkit-slider-thumb {
@@ -1450,69 +1481,20 @@ padding-bottom: 10px;
 input[type=range]::-ms-thumb {
   height: 20px;
   width: 20px;
+  background-color: #ffffff;
   border-radius: 50%;
-  background: #ffffff;
   cursor: pointer;
   position: absolute;
   bottom: -10px;
-  background-image: url("../img/filter-button.svg");
-
 }
 
-.filter-price input[type=range]::-webkit-slider-runnable-track {
-  height: 3px;
-  cursor: pointer;
-  background: #ffffff;
-  border-radius: 1.3px;
-  margin: 10px;
-  position: relative;
-}
-
-.filter-price input[type=range]::-moz-range-track {
-  height: 3px;
-  cursor: pointer;
-  background: #ffffff;
-  border-radius: 1.3px;
-}
-
-input[type=range]::-ms-track {
-  height: 3px;
-  cursor: pointer;
-  background: #ffffff;
-  border-radius: 1.3px;
-}
-
-.filter-price input[type=range]:nth-of-type(2) {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 201px;
-  display: block;
-  background: transparent;
-  margin-top: -20px;
-}
-
-.filter-price input[type=range]:nth-of-type(2)::-webkit-slider-runnable-track {
-  background: transparent;
-
-}
-
-.filter-price input[type=range]:nth-of-type(2)::-moz-range-track {
-  background: transparent;
-}
-
-.filter-price input[type=range]:nth-of-type(2)::-ms-track {
-  background: transparent;
-}
-
-.filter-price input[type=range]:nth-of-type(2)::-webkit-slider-thumb {
-}
 
 .filter-fat legend {
   display: inline-block;
   vertical-align:center;
   padding-bottom: 10px;
   margin-left: 22px;
+  color: #ffffff;
 }
 
 .filter-fat-list {
@@ -1587,6 +1569,7 @@ input[type=range]::-ms-track {
   vertical-align: center;
   margin-bottom: 5px;
   margin-left: 12px;
+  color: #ffffff;
 }
 
 .filter-topping-list {
