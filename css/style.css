@@ -243,7 +243,7 @@ a {
 
 .user-navigation-search-list input {
   display: block;
-  margin: 15px;
+  margin: 15px auto;
   width: 305px;
   border: 1px solid rgb(211, 211, 211);
 }
@@ -1445,10 +1445,11 @@ padding-bottom: 10px;
 }
 
 input[type=range]::-ms-track {
-  color: #ffffff;
+  background-color: #ffffff;
+  height: 2px;
   cursor: pointer;
   border-radius: 1.3px;
-  margin: 8px;
+  margin: 4px;
 }
 
 input[type=range]::-ms-fill {
