@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/minified-style.css" rel="stylesheet">
+  <link href="css/min-style.css" rel="stylesheet">
 </head>
 
 <body class="inner-page">
@@ -40,7 +40,7 @@
           </li>
           <li class="user-navigation-item"><a href="#">Вход</a>
             <form method="post" action="https://echo.htmlacademy.ru">
-              <ul class=" modal user-navigation-login-list">
+              <ul class="modal user-navigation-login-list">
                 <li>
                   <label for="user-login-email" class="visually-hidden">Электронная почта:</label>
                   <input type="email" id="user-login-email" name="user-email" placeholder="Электронная почта">
@@ -59,37 +59,40 @@
           </li>
           <li class="user-navigation-item">
             <a href="#"><span class="visually-hidden">Корзина:</span>2 товара</a>
-            <table class="modal basket">
-              <tr class=" visually-hidden basket-window-close">
-                <th>Закрыть окно</th>
-                <th>Картинка выбранного мороженного</th>
-                <th>Выбранный товар</th>
-                <th>Количество</th>
-                <th>Цена</th>
-              </tr>
-              <tr>
-                <td class="chosen-delete"><span class="visually-hidden">Закрыть</span></td>
-                <td class="chosen-pic"><span class="visually-hidden">Картинка выбранного мороженного</span></td>
-                <td class="chosen-title">Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х <span class="basket-price-per-kilo">200 руб.</span></td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td class="chosen-delete"><span class="visually-hidden">Закрыть</span></td>
-                <td class="chosen-pic"><span class="visually-hidden">Картинка выбранного мороженного</span></td>
-                <td class="chosen-title">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х <span class="basket-price-per-kilo">300 руб.</span></td>
-                <td>450 руб.</td>
-              </tr>
-              <tr class="table-footer">
-                <td colspan="5">Итого: 750 руб.</td>
-              </tr>
-              <tr class="table-button">
-                <td colspan="5"><a href="#" class="button">Оформить заказ</a></td>
-              </tr>
-            </table>
+            <ul class="basket-submenu modal">
+              <li class="basket-submenu-item">
+                <table class="basket">
+                  <tr class=" visually-hidden basket-window-close">
+                    <th>Закрыть окно</th>
+                    <th>Картинка выбранного мороженного</th>
+                    <th>Выбранный товар</th>
+                    <th>Количество</th>
+                    <th>Цена</th>
+                  </tr>
+                  <tr>
+                    <td class="chosen-delete"><span>Закрыть</span></td>
+                    <td class="chosen-pic"><span class="visually-hidden">Картинка выбранного мороженного</span></td>
+                    <td class="chosen-title">Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг х <span class="basket-price-per-kilo">200 руб.</span></td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td class="chosen-delete"><span>Закрыть</span></td>
+                    <td class="chosen-pic"><span class="visually-hidden">Картинка выбранного мороженного</span></td>
+                    <td class="chosen-title">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг х <span class="basket-price-per-kilo">300 руб.</span></td>
+                    <td>450 руб.</td>
+                  </tr>
+                  <tr class="table-footer">
+                    <td colspan="5">Итого: 750 руб.</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="basket-submenu-item">
+                <a href="#" class="button table-button">Оформить заказ</a></li>
+            </ul>
           </li>
-        </ul>
+          </ul>
       </nav>
       <p class="top-contact-info">
         <span class="top-contact-hours">С 10 до 20, ежедневно</span>
@@ -282,11 +285,13 @@
       <!-- Пагинация -->
 
       <ul class="pagination-list">
+        <li class="pagination-item"><a href="#" class="previous">Назад</a></li>
         <li class="pagination-item pagination-item-current"><a>1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">4</a></li>
         <li class="pagination-item"><a href="#">5</a></li>
+        <li class="pagination-item"><a href="#" class="next">Вперед</a></li>
       </ul>
     </main>
 
@@ -312,7 +317,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo">
           <img src="img/logo-htmlacademy.svg" alt="HTML Logo" width="150" height="80">
         </a>
-        <p class="copyright-text">Cделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>© 2017</p>
+        <p class="copyright-text">Cделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </div>
     </footer>
   </div>
